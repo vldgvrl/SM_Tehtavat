@@ -1,1 +1,3 @@
-# SM_Tehtavat
+# Suunnittelumallit Tehtävät
+
+Vladimir Gavrilov
