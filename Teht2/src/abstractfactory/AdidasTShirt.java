@@ -14,7 +14,7 @@ package abstractfactory;
 
 public class AdidasTShirt implements Adidas{
 
-	private String jeans = "Hyvä näköinen adidas T-paita";
+	private String jeans = "Hyvänäköinen adidas T-paita";
 
 	@Override
 	public String toString() {
