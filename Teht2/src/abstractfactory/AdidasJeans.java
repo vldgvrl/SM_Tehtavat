@@ -12,7 +12,7 @@ package abstractfactory;
  */
 public class AdidasJeans implements Adidas{
 
-	String jeans = "farkut adidasi:lta";
+	String jeans = "Farkut adidas merkkilta";
 	
 	@Override
 	public String toString() {

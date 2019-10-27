@@ -12,7 +12,7 @@ package abstractfactory;
  */
 public class BossBoots implements Boss {
 
-	private String boots = "Valkoinen boss kengät";
+	private String boots = "Valkoiset boss kengät";
 
 	@Override
 	public String toString() {
