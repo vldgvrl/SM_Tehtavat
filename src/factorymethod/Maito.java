@@ -3,26 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Teht5;
+package factorymethod;
 
 /**
  *
  * @author vld
  */
-public class Phone implements Properties {
-
-	private String name;
-	
-	Phone(String name) {
-		this.name = name;
-	}
-
-	@Override
-	public String toString(){
-		return name;
-	}
-
-
-	
-	
+public class Maito implements Juoma{
+    public String toString(){
+        return "maito";
+    } 
 }

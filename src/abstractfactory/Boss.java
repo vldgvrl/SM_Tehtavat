@@ -3,23 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Teht5;
+package abstractfactory;
 
 /**
  *
  * @author vld
+ * AbstractProductB vastaava luokka
  */
-public class Computer implements Properties {
-
-	private String name;
-
-	public Computer(String name) {
-		this.name = name;
-	}
-
-	@Override
-	public String toString(){
-		return name;
-	}
+public interface Boss {
+	public abstract String toString();
 	
 }
