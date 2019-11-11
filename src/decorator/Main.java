@@ -12,6 +12,18 @@ package decorator;
 public class Main {
 
 	public static void main(String[] args) {
+
+		Data file = new ReadOnly();
+		file.readTheFile();
+		System.out.println(file.writeTheFile());
+		
+		Data fileEdit = new Write(new ReadOnly());
+		fileEdit.readTheFile();
+		System.out.println(fileEdit.writeTheFile());
+		
+		
+
+		
 		
 	}
 	
