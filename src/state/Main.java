@@ -19,12 +19,12 @@ public class Main {
 		charmander.whatYouCanDo();
 		charmander.evolution();
 
-		System.out.println("Charmander evolution");
+		System.out.println("=====Charmander evolution=====");
 		charmander.whoAreYou();
 		charmander.whatYouCanDo();
 		charmander.evolution();
 
-		System.out.println("Charmander last evolution");
+		System.out.println("=====Charmander last evolution=====");
 		charmander.whoAreYou();
 		charmander.whatYouCanDo();
 		charmander.evolution();

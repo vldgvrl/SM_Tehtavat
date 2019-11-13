@@ -21,19 +21,19 @@ public class CharmanderStartLv extends PokemonState {
 	}
 	
 	@Override
-	public void whoAreYou(){
+	public void whoAreYou(Charmander pokemon){
 		System.out.println("I am " + name);
 	}
 
 	@Override
-	public void whatYouCanDo(){
+	public void whatYouCanDo(Charmander pokemon){
 		System.out.println("I can through smalls fire balls" );
 		System.out.println("I can walk slowly" );
 		System.out.println("I can make low jump" );
 	}
 
 	@Override
-	public void evolution(){
+	public void evolution(Charmander pokemon){
 		changeState(pokemon, CharmeleonMidleLv.getInstance());
 	}
 	

@@ -21,19 +21,19 @@ public class CharizardLastLv extends PokemonState{
 	}
 
 	@Override
-	public void whoAreYou(){
+	public void whoAreYou(Charmander pokemon){
 		System.out.println("I am " + name);
 	}
 
 	@Override
-	public void whatYouCanDo(){
+	public void whatYouCanDo(Charmander pokemon){
 		System.out.println("I can burn all around me" );
 		System.out.println("I can run fast" );
 		System.out.println("I can fly" );
 	}
 
 	@Override
-	public void evolution(){
+	public void evolution(Charmander pokemon){
 		System.out.println("I can't evolute any more");
 	}
 
