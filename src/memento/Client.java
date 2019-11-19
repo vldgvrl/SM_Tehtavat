@@ -24,7 +24,8 @@ public class Client extends Thread {
 		Object myGame = game.joinGame(player);
 		boolean response = game.guess(player, myGame);
 		if (response){
-			System.out.println("Olet voitanut! Luvut ovat sama.");
+			System.out.println("Olet voitanut! Luvut ovat sama." + 
+				"Sinun numero oli: " + player.myNumber());
 		}else{
 			System.out.println("Luvut ei ollut sama.");
 		}
