@@ -9,7 +9,7 @@ import state.*;
 
 /**
  *Testaus main luokka on state pakkauksessa:
- * https://github.com/vldgvrl/SM_Tehtavat/blob/master/src/state/Main.java
+ * <a href="https://github.com/vldgvrl/SM_Tehtavat/blob/master/src/state/Main.java">state Main.java</a>
  * 
  * @author vld
  */
