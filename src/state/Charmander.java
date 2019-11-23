@@ -9,7 +9,7 @@ package state;
  *
  * @author vld
  */
-class Charmander {
+public class Charmander {
 	
 	private PokemonState pokemonState;
 
