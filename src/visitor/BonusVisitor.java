@@ -8,7 +8,9 @@ package visitor;
 import state.*;
 
 /**
- *
+ *Testaus main luokka on state pakkauksessa:
+ * https://github.com/vldgvrl/SM_Tehtavat/blob/master/src/state/Main.java
+ * 
  * @author vld
  */
 public class BonusVisitor implements Visitor{
