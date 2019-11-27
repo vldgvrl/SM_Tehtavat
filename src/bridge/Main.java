@@ -24,7 +24,7 @@ public class Main {
 		programm.provideService();
 		programm.getPay();
 
-		//Luodan uusi ohjelmistokehittäja työntekijä
+		//Luodan uusi webkehittäja työntekijä
 		ComputerService webDevelper = new Specialist(new Software("Nettisivun design päivitys")); 
 		webDevelper.provideService();
 		webDevelper.getPay();
