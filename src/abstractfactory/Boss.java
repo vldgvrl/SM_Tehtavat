@@ -8,9 +8,27 @@ package abstractfactory;
 /**
  *
  * @author vld
- * AbstractProductB vastaava luokka
  */
-public interface Boss {
-	public abstract String toString();
+public class Boss implements Shop{
+
+	@Override
+	public BrandBoots getBoot() {
+		return new BossBoots();
+	}
+
+	@Override
+	public BrandCaps getCap() {
+		return new BossCap();
+	}
+
+	@Override
+	public BrandJeans getJeans() {
+		return new BossJeans();
+	}
+
+	@Override
+	public BrandTShirts getTShirt() {
+		return new BossTShirt();
+	}
 	
 }

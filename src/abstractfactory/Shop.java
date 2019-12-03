@@ -8,16 +8,12 @@ package abstractfactory;
 /**
  *
  * @author vld
- * ProductA1 vastaava luokka
  */
-public class AdidasBoots extends BrandBoots{
+public interface Shop {
 
-	private String boots = "Valkoiset adidas kengät";
-
-	@Override
-	public String toString() {
-		return boots;
-	}
-
+	public BrandBoots getBoot();
+	public BrandCaps getCap();
+	public BrandJeans getJeans();
+	public BrandTShirts getTShirt();
 	
 }

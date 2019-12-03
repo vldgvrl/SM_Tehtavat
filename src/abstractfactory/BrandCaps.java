@@ -10,14 +10,7 @@ package abstractfactory;
  * @author vld
  * ConcreteFactory2 vastaava luokka
  */
-public class BrandCaps implements MyClothes{
-
-	public Adidas wearAdidas() {
-		return new AdidasCap();	
-	}
-
-	public Boss wearBoss() {
-		return new BossCap();
-	}
+public class BrandCaps extends Brand {
+	
 }
 

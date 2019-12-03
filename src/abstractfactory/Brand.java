@@ -8,16 +8,12 @@ package abstractfactory;
 /**
  *
  * @author vld
- * ProductA1 vastaava luokka
  */
-public class AdidasBoots extends BrandBoots{
+public abstract class Brand {
 
-	private String boots = "Valkoiset adidas kengät";
-
-	@Override
-	public String toString() {
-		return boots;
-	}
-
+	protected String name;
 	
+	public String toString(){
+		return this.name;
+	}
 }

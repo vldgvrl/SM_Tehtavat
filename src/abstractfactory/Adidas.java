@@ -8,9 +8,27 @@ package abstractfactory;
 /**
  *
  * @author vld
- * AbstractProductA vastaava luokka
  */
-public interface Adidas {
-	public abstract String toString();
+public class Adidas implements Shop{
+
+	@Override
+	public BrandBoots getBoot() {
+		return new AdidasBoots();
+	}
+
+	@Override
+	public BrandCaps getCap() {
+		return new AdidasCap();
+	}
+
+	@Override
+	public BrandJeans getJeans() {
+		return new AdidasJeans();
+	}
+
+	@Override
+	public BrandTShirts getTShirt() {
+		return new AdidasTShirt();
+	}
 	
 }

@@ -10,7 +10,7 @@ package abstractfactory;
  * @author vld
  * ProductB4 vastaava luokka
  */
-public class BossTShirt implements Boss {
+public class BossTShirt extends BrandTShirts {
 
 	private String jeans = "Hyvänäköinen boss T-paita";
 

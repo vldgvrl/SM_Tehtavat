@@ -10,7 +10,7 @@ package abstractfactory;
  * @author vld
  * ProductB2 vastaava luokka
  */
-public class BossCap implements Boss{
+public class BossCap extends BrandCaps{
 
 	String cap = "Boss lippis";
 

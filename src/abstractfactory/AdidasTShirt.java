@@ -12,7 +12,7 @@ package abstractfactory;
 
  */
 
-public class AdidasTShirt implements Adidas{
+public class AdidasTShirt extends BrandTShirts{
 
 	private String jeans = "Hyvänäköinen adidas T-paita";
 

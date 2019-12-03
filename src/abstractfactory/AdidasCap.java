@@ -10,7 +10,7 @@ package abstractfactory;
  * @author vld
  * ProductA2 vastaava luokka
  */
-public class AdidasCap implements Adidas{
+public class AdidasCap extends BrandCaps{
 
 	String cap = "Adidas lippis";
 

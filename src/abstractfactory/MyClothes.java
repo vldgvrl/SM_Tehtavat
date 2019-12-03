@@ -11,7 +11,29 @@ package abstractfactory;
  */
 //AbstractFactory luokka
 
-public interface MyClothes {
-	public abstract  Adidas wearAdidas();
-	public abstract Boss wearBoss();
+public class MyClothes {
+
+	private Shop myClothes;
+
+	public MyClothes(Shop clothes) {
+
+		this.myClothes = clothes;
+	}
+
+
+	public void tellWhatWear(){
+		
+		System.out.println("Minulla on päällä:");
+
+		System.out.println(myClothes.getBoot()+"\n"+
+		myClothes.getJeans()+"\n"+
+		myClothes.getTShirt()+"\n"+
+		myClothes.getCap());
+
+	}
+
+	public void buyClothes(Shop clothes){
+		this.myClothes = clothes;
+	}
+
 }
