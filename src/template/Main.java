@@ -14,6 +14,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Game newGame = new RockPaperScissors();
-		newGame.playOneGame(10);
+		newGame.playOneGame(2);
 	}
 }

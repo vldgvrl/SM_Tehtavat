@@ -5,7 +5,6 @@
  */
 package template;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -14,11 +13,10 @@ import java.util.Random;
  */
 public class RockPaperScissors extends Game {
 
-	Random rand = new Random(3);
 	String handsign;
-	int winner=3;
-	private int playersCount = 0;
-	boolean paper=false, scessors=false, rock=false;
+	int winner=-1;
+	int ekaPl, tokaPl;
+	
 
 
 	@Override
@@ -30,43 +28,45 @@ public class RockPaperScissors extends Game {
 	@Override
 	void makePlay(int player) {
 
-		System.out.println(player);
-		if (player > playersCount || player == 0 && playersCount == 0){
+		Random rand = new Random();
+		int sign = rand.nextInt(3);
 
+			switch(sign){
+				case 0:
+					handsign = "rock";
+					break;
+				case 1: 
+					handsign = "paper";
+					break;
+				case 2: 
+					handsign = "scissors";
+					break;
+			}
+			System.out.println("Player number " + (player+1) + " throws: " + handsign);
 
-			playersCount=player;
-
-			rand = new Random();
-
-				System.out.println(rand.nextInt(3));
-
-				switch(rand.nextInt(3)){
-					case 0:
-						handsign = "rock";
-						rock = true;
-						break;
-					case 1: 
-						handsign = "paper";
-						paper = true;
-						break;
-					case 2: 
-						handsign = "scissors";
-						scessors = true;
-						break;
+			if (player == 0){
+				ekaPl = sign;
+				winner = -1;
+			}else{
+				tokaPl = sign;
+				if(ekaPl > tokaPl && tokaPl != 0 || ekaPl == 0 && tokaPl == 2){
+					winner = 1;
+				}else if (ekaPl == tokaPl){
+					winner = -1;
+				}else{
+					winner = 2;
 				}
-				System.out.println("Player number " + (player+1) + "throws: " + handsign);
+				ekaPl=0;
+				tokaPl=0;
+			}
 
-			
-		}else{
-			winner=player+1;
-		}
+	}
 
 
-}
 
 	@Override
 	boolean endOfGame() {
-		if(winner == 3){
+		if(winner == -1){
 			return false;
 		}
 		return true;
